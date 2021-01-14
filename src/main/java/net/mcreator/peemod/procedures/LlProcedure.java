@@ -35,6 +35,10 @@ public class LlProcedure extends PeemodModElements.ModElement {
 		if (entity instanceof PlayerEntity && !entity.world.isRemote) {
 			((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("Seriously. This can destroy bedrock for now."), (false));
 		}
+		if (entity instanceof PlayerEntity && !entity.world.isRemote) {
+			((PlayerEntity) entity).sendStatusMessage(
+					new StringTextComponent("Play with servers at your own risk! Lingering and Splash potions will glitch."), (false));
+		}
 		playername = (String) (entity.getDisplayName().getString());
 		if (entity instanceof PlayerEntity && !entity.world.isRemote) {
 			((PlayerEntity) entity).sendStatusMessage(
