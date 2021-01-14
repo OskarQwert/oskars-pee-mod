@@ -17,12 +17,59 @@
           }
         ]
       }
+    },
+    {
+      "name": "Potion",
+      "type": "potion",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "potion"
+    },
+    {
+      "name": "PotionOnPotionActiveTick",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "potion_on_potion_active_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Awwwpeee",
+      "type": "achievement",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "awwwpeee"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "effect.potion": "Potion of Pee",
+      "item.minecraft.potion.effect.potion": "Potion of Pee",
+      "item.minecraft.tipped_arrow.effect.potion": "Arrow of Potion of Pee",
+      "advancements.awwwpeee.title": "Awwwpee",
+      "item.minecraft.lingering_potion.effect.potion": "Lingering Potion of Pee",
+      "advancements.awwwpeee.descr": "Have a potion of pee",
+      "item.minecraft.splash_potion.effect.potion": "Splash Potion of Pee"
+    }
   },
   "workspaceSettings": {
     "modid": "peemod",

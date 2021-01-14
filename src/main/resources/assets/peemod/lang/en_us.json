@@ -1,1 +1,9 @@
-{}
+{
+  "effect.potion": "Potion of Pee",
+  "item.minecraft.potion.effect.potion": "Potion of Pee",
+  "item.minecraft.tipped_arrow.effect.potion": "Arrow of Potion of Pee",
+  "advancements.awwwpeee.title": "Awwwpee",
+  "item.minecraft.lingering_potion.effect.potion": "Lingering Potion of Pee",
+  "advancements.awwwpeee.descr": "Have a potion of pee",
+  "item.minecraft.splash_potion.effect.potion": "Splash Potion of Pee"
+}

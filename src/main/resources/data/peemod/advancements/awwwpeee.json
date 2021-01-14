@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:splash_potion"
+    },
+    "title": {
+      "translate": "advancements.awwwpeee.title"
+    },
+    "description": {
+      "translate": "advancements.awwwpeee.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "awwwpeee": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "minecraft:nether/brew_potion"
+}

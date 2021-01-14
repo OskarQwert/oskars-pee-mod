@@ -1,0 +1,22 @@
+{
+  "_fv": 13,
+  "_type": "potion",
+  "definition": {
+    "name": "Potion of Pee",
+    "effectName": "Potion of Pee",
+    "icon": "close-up-of-oil-in-glass-royalty-free-image-155292117-1560788365_1.png",
+    "color": {
+      "value": -262339,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": true,
+    "registerPotionType": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onActiveTick": {
+      "name": "PotionOnPotionActiveTick"
+    }
+  }
+}
