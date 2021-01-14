@@ -72,10 +72,11 @@
     }
   },
   "workspaceSettings": {
-    "modid": "peemod",
-    "modName": "peemod",
-    "version": "1.0.0",
-    "author": "oskar, MCreator",
+    "modid": "oskarspeemod",
+    "modName": "Oskar\u0027s Pee Mod",
+    "version": "BD1  / A0.1",
+    "description": "Adds PEE (yes pee) to minecraft",
+    "author": "OskarQwert / Oskar",
     "websiteURL": "https://mcreator.net",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
@@ -84,6 +85,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.15.2",
+    "credits": "Oskar",
     "modElementsPackage": "net.mcreator.peemod",
     "lockBaseModFiles": false
   },

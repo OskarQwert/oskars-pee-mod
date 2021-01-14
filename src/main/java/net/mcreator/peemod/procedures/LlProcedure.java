@@ -9,14 +9,14 @@ import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
 
-import net.mcreator.peemod.PeemodModElements;
+import net.mcreator.peemod.OskarspeemodModElements;
 
 import java.util.Map;
 import java.util.HashMap;
 
-@PeemodModElements.ModElement.Tag
-public class LlProcedure extends PeemodModElements.ModElement {
-	public LlProcedure(PeemodModElements instance) {
+@OskarspeemodModElements.ModElement.Tag
+public class LlProcedure extends OskarspeemodModElements.ModElement {
+	public LlProcedure(OskarspeemodModElements instance) {
 		super(instance, 1);
 		MinecraftForge.EVENT_BUS.register(this);
 	}

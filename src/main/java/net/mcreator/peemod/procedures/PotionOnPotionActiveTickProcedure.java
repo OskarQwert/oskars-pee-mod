@@ -6,13 +6,13 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.entity.Entity;
 import net.minecraft.block.Blocks;
 
-import net.mcreator.peemod.PeemodModElements;
+import net.mcreator.peemod.OskarspeemodModElements;
 
 import java.util.Map;
 
-@PeemodModElements.ModElement.Tag
-public class PotionOnPotionActiveTickProcedure extends PeemodModElements.ModElement {
-	public PotionOnPotionActiveTickProcedure(PeemodModElements instance) {
+@OskarspeemodModElements.ModElement.Tag
+public class PotionOnPotionActiveTickProcedure extends OskarspeemodModElements.ModElement {
+	public PotionOnPotionActiveTickProcedure(OskarspeemodModElements instance) {
 		super(instance, 3);
 	}
 

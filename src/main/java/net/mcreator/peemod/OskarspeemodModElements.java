@@ -38,7 +38,7 @@ import java.util.ArrayList;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Retention;
 
-public class PeemodModElements {
+public class OskarspeemodModElements {
 	public final List<ModElement> elements = new ArrayList<>();
 	public final List<Supplier<Block>> blocks = new ArrayList<>();
 	public final List<Supplier<Item>> items = new ArrayList<>();
@@ -46,22 +46,22 @@ public class PeemodModElements {
 	public final List<Supplier<EntityType<?>>> entities = new ArrayList<>();
 	public final List<Supplier<Enchantment>> enchantments = new ArrayList<>();
 	public static Map<ResourceLocation, net.minecraft.util.SoundEvent> sounds = new HashMap<>();
-	public PeemodModElements() {
+	public OskarspeemodModElements() {
 		try {
-			ModFileScanData modFileInfo = ModList.get().getModFileById("peemod").getFile().getScanResult();
+			ModFileScanData modFileInfo = ModList.get().getModFileById("oskarspeemod").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();
 			for (ModFileScanData.AnnotationData annotationData : annotations) {
 				if (annotationData.getAnnotationType().getClassName().equals(ModElement.Tag.class.getName())) {
 					Class<?> clazz = Class.forName(annotationData.getClassType().getClassName());
-					if (clazz.getSuperclass() == PeemodModElements.ModElement.class)
-						elements.add((PeemodModElements.ModElement) clazz.getConstructor(this.getClass()).newInstance(this));
+					if (clazz.getSuperclass() == OskarspeemodModElements.ModElement.class)
+						elements.add((OskarspeemodModElements.ModElement) clazz.getConstructor(this.getClass()).newInstance(this));
 				}
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		Collections.sort(elements);
-		elements.forEach(PeemodModElements.ModElement::initElements);
+		elements.forEach(OskarspeemodModElements.ModElement::initElements);
 	}
 
 	public void registerSounds(RegistryEvent.Register<net.minecraft.util.SoundEvent> event) {
@@ -71,7 +71,7 @@ public class PeemodModElements {
 	private int messageID = 0;
 	public <T> void addNetworkMessage(Class<T> messageType, BiConsumer<T, PacketBuffer> encoder, Function<PacketBuffer, T> decoder,
 			BiConsumer<T, Supplier<NetworkEvent.Context>> messageConsumer) {
-		PeemodMod.PACKET_HANDLER.registerMessage(messageID, messageType, encoder, decoder, messageConsumer);
+		OskarspeemodMod.PACKET_HANDLER.registerMessage(messageID, messageType, encoder, decoder, messageConsumer);
 		messageID++;
 	}
 
@@ -102,9 +102,9 @@ public class PeemodModElements {
 		@Retention(RetentionPolicy.RUNTIME)
 		public @interface Tag {
 		}
-		protected final PeemodModElements elements;
+		protected final OskarspeemodModElements elements;
 		protected final int sortid;
-		public ModElement(PeemodModElements elements, int sortid) {
+		public ModElement(OskarspeemodModElements elements, int sortid) {
 			this.elements = elements;
 			this.sortid = sortid;
 		}

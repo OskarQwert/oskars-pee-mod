@@ -15,18 +15,18 @@ import net.minecraft.potion.Effect;
 import net.minecraft.entity.LivingEntity;
 
 import net.mcreator.peemod.procedures.PotionOnPotionActiveTickProcedure;
-import net.mcreator.peemod.PeemodModElements;
+import net.mcreator.peemod.OskarspeemodModElements;
 
 import java.util.Map;
 import java.util.HashMap;
 
-@PeemodModElements.ModElement.Tag
-public class PotionPotion extends PeemodModElements.ModElement {
-	@ObjectHolder("peemod:potion")
+@OskarspeemodModElements.ModElement.Tag
+public class PotionPotion extends OskarspeemodModElements.ModElement {
+	@ObjectHolder("oskarspeemod:potion")
 	public static final Effect potion = null;
-	@ObjectHolder("peemod:potion")
+	@ObjectHolder("oskarspeemod:potion")
 	public static final Potion potionType = null;
-	public PotionPotion(PeemodModElements instance) {
+	public PotionPotion(OskarspeemodModElements instance) {
 		super(instance, 2);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
@@ -52,7 +52,7 @@ public class PotionPotion extends PeemodModElements.ModElement {
 		public EffectCustom() {
 			super(EffectType.BENEFICIAL, -262339);
 			setRegistryName("potion");
-			potionIcon = new ResourceLocation("peemod:textures/close-up-of-oil-in-glass-royalty-free-image-155292117-1560788365_1.png");
+			potionIcon = new ResourceLocation("oskarspeemod:textures/close-up-of-oil-in-glass-royalty-free-image-155292117-1560788365_1.png");
 		}
 
 		@Override

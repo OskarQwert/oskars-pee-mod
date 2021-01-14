@@ -2,14 +2,17 @@ modLoader="javafml"
 loaderVersion="[31,)"
 
 [[mods]]
-modId="peemod"
-version="1.0.0"
-displayName="peemod"
-credits="Created using mod maker MCreator - https://mcreator.net/about"
+modId="oskarspeemod"
+version="BD1  / A0.1"
+displayName="Oskar's Pee Mod"
+credits="Oskar"
 displayURL="https://mcreator.net"
-authors="oskar, MCreator"
+authors="OskarQwert / Oskar"
+description='''
+Adds PEE (yes pee) to minecraft
+'''
 
-[[dependencies.peemod]]
+[[dependencies.oskarspeemod]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.15.2]"
